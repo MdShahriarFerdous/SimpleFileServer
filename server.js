@@ -24,7 +24,8 @@ let server = http.createServer(function (req, res) {
 		} else {
 			// Return 404 Not Found for files that do not exist
 			res.statusCode = 404;
-			res.end("404 Not Found");
+			let dataFile = fs.readFileSync(__dirname + "/public/status.html");
+			res.end(dataFile);
 		}
 	}
 });

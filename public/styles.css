@@ -38,3 +38,9 @@ button {
 button:hover {
 	background-color: rgb(16, 66, 173);
 }
+.status-code {
+	color: red;
+	font-weight: 600;
+	font-size: 3rem;
+	text-align: center;
+}
